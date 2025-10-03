@@ -1,4 +1,4 @@
-/* USER CODE BEGIN Header */
+* USER CODE BEGIN Header */
 /**
   ******************************************************************************
   * @file           : main.c
@@ -42,7 +42,7 @@
 #define NS        128         // Number of samples in LUT
 #define TIM2CLK   16000000UL  // STM Clock frequency: Hint You might want to check the ioc file
 #define F_SIGNAL  125000UL    // 125 kHz
-#define NUM_WAVEFORMS 6
+#define NUM_WAVEFORMS 6       // the number of wave forms we can produce
 
 /* USER CODE END PD */
 
@@ -52,7 +52,7 @@
 /* USER CODE END PM */
 
 /* Private variables ---------------------------------------------------------*/
-TIM_HandleTypeDef htim2;
+TIM_HandleTypeDef htim2; 
 TIM_HandleTypeDef htim3;
 DMA_HandleTypeDef hdma_tim2_ch1;
 
@@ -518,3 +518,4 @@ void assert_failed(uint8_t *file, uint32_t line)
   /* USER CODE END 6 */
 }
 #endif /* USE_FULL_ASSERT */
+
