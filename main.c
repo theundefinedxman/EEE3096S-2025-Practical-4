@@ -40,7 +40,7 @@
 /* USER CODE BEGIN PD */
 // TODO: Add values for below variables
 #define NS        128         // Number of samples in LUT
-#define TIM2CLK   16000000UL  // STM Clock frequency: Hint You might want to check the ioc file
+#define TIM2CLK   16000000UL  // STM Clock frequency: (16MHz)
 #define F_SIGNAL  125000UL    // 125 kHz (signal we want our analogue to have)
 #define NUM_WAVEFORMS 6       // the number of wave forms we can produce
 
@@ -524,6 +524,7 @@ void assert_failed(uint8_t *file, uint32_t line)
   /* USER CODE END 6 */
 }
 #endif /* USE_FULL_ASSERT */
+
 
 
 
